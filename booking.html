@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="booking.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lexend Zetta' rel='stylesheet'>
+    <style>
+      body {
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #34495E;
+  }
+  
+  div.elem-group {
+    margin: 20px 0;
+  }
+  
+  div.elem-group.inlined {
+    width: 49%;
+    display: inline-block;
+    /* float: left; */
+    margin-left: 1%;
+  }
+  
+  label {
+    display: block;
+    font-family: 'Nanum Gothic';
+    padding-bottom: 10px;
+    font-size: 1.25em;
+    color: #fff;
+  }
+  
+  input, select, textarea {
+    border-radius: 2px;
+    border: 2px solid #777;
+    box-sizing: border-box;
+    font-size: 1.25em;
+    font-family: 'Nanum Gothic';
+    width: 100%;
+    padding: 10px;
+  }
+  
+  div.elem-group.inlined input {
+    width: 95%;
+    display: inline-block;
+  }
+  
+  textarea {
+    height: 81px;
+  }
+  
+  hr {
+    border: 1px dotted #ccc;
+  }
+  
+  button {
+    height: 50px;
+    background: orange;
+    border: none;
+    color: white;
+    font-size: 1.25em;
+    font-family: 'Nanum Gothic';
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    border: 2px solid black;
+  }
+    </style>
+</head>
+<body>
+  <hr>
+  <h1 style="font-family:Lexend Zetta; color: #fff;">BOOK NOW</h1>
+  <hr>
+    <form action="mailto:harshyt1975@gmail.com" method="post">
+        <div class="elem-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="visitor_name" placeholder="Ex:Amit Sharma" pattern=[A-Z\sa-z]{3,20} required>
+        </div>
+        <div class="elem-group">
+          <label for="email">Your E-mail</label>
+          <input type="email" id="email" name="visitor_email" placeholder="exmail@email.com" required>
+        </div>
+        <div class="elem-group">
+          <label for="phone">Your Phone</label>
+          <input type="tel" id="phone" name="visitor_phone" placeholder="0000000000" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+        </div>
+        <hr>
+        <div class="elem-group inlined">
+          <label for="adult">Adults</label>
+          <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="child">Children</label>
+          <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="checkin-date">Date</label>
+          <input type="date" id="checkin-date" name="checkin" required>
+        </div>
+
+        <div class="elem-group">
+          <label for="room-selection">Cinema</label>
+          <select id="room-selection" name="room_preference" required>
+              <option value="">Select Cinema</option>
+              <option value="connecting">2-D Cinema Phagwara</option>
+              <option value="adjoining">3-D Cinema Jalandhar</option>
+              <option value="adjacent">PVR Jalandhar</option>
+          </select>
+        </div>
+        <div class="elem-group">
+          <label for="room-selection">Timing</label>
+          <select id="room-selection" name="room_preference" required>
+              <option value="">Select Time</option>
+              <option value="connecting">9:00 am</option>
+              <option value="adjoining">1:30 pm</option>
+              <option value="adjacent">5:00 pm</option>
+              <option value="adjacent">9:00 pm</option>
+          </select>
+        </div>
+        <hr>
+        <div class="elem-group">
+          <label for="message">Any Remarks?</label>
+          <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+        </div>
+        <button type="submit" onclick="alert('Your Booking is Confirmed! \nYour E-Ticket has been Sent to Your E-Mail Adress')">Book Now</button>
+      </form>
+</body>
+</html>

@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 4.2rem;
+    background-color: #34495E;
+    padding-bottom: 0rem;
+    padding-top: 0.1rem;
+}
+ul{
+    display: flex;
+    justify-content: right;
+
+}
+li{
+    margin: 0.2rem;
+    font-size: larger;
+    list-style-type: none;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+li:hover{
+    box-shadow: 4px 4px 4px 4px #34495E;
+    border-radius: 8px; 
+    transform: scale(1.2) perspective(2px)
+}
+
+
+#carousel_items{
+    background-color: #fff;
+}
+/* .card-img-top{
+    height: 10rem;
+} */
+
+ #nav-bar{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+ }
+ 
+ .col:hover{
+    transform: scale(1.2) perspective(0);
+    
+    
+ }
+ .card-img-top{
+    
+   height: 100%;
+
+ }
+ .card{
+    margin-right: 23px;
+    transition: height 2s ease-in 3s;
+ }
+ .card:hover{
+    box-shadow: 4px 4px 4px 4px whitesmoke;
+    border-radius: 8px; 
+    transform: scale(1.09) perspective(0)
+ }
+ .stream{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+ }
+
+.pre{
+    background-color: rgb(43, 49, 72);
+}
+.prebanner{
+    /* margin-right: ; */
+}

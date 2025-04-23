@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+<style>
+  .card-title{
+    text-align: center;
+  }
+</style>
+</head>
+
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark " id="nav-bar">
+      <!-- <a class="navbar-brand" href="">BookYour Show</a> -->
+      <img src="book shook.png" style="height: 5rem; width: 15rem; margin-top: 2rem; margin-bottom: 2rem;" alt="">
+     
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">HOME</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about_us.html">About US</a>
+          </li>
+          <li>
+            <a class="nav-link" href="./login.html">Login/Sign Up</a>
+          </li>
+
+        </ul>
+      </div>
+      <form class="d-flex" role="search">
+
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </nav>
+  </header>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators firstslide">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="1669358353837_pvwebbb.avif" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="burgir.avif" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="imagedragons.avif" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<!-- recommended movies -->
+<section id="movies" class="mt-5">
+  <div class="container">
+    <h2>Recommended Movies</h2>
+  <div id="carouselExampleControls_r" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="movie-card d-flex " >
+          <div class="card" style="width: 14rem;">
+            <img src="drishyam2.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Drishyam 2</h5>
+              <a href="booking.html" style="margin-left: 3rem;" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 14rem;">
+            <img src="avatar.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Avatar: The Way Of Water</h5>
+              <a href="booking.html" style="margin-left: 3rem;" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 14rem;">
+            <img src="action hero.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Bhediya</h5>
+              <a href="booking.html" style="margin-left: 3rem;" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 14rem;">
+            <img src="bhediya.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">An Action Hero</h5>
+              <a href="booking.html" style="margin-left: 3rem;" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 14rem;">
+            <img src="violentnoght.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Violent Night</h5>
+              <a href="booking.html" style="margin-left: 3rem;" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="movie-card d-flex " >
+          <div class="card" style="width: 14rem;">
+            <img src="uunchi.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Uunchai</h5>
+              <a href="booking.html" style="margin-left: 3rem;" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 14rem;">
+            <img src="black adam.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Black Panthar: Wakanda Forever</h5>
+              <a href="booking.html" style="margin-left: 3rem;" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 14rem;">
+            <img src="devotion.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Devotion</h5>
+              <a href="booking.html" style="margin-left: 3rem;" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 14rem;">
+            <img src="goshta.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Goshta Eka Paithanichi</h5>
+             <a href="booking.html" style="margin-left: 3rem;" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 14rem;">
+            <img src="hit 2nd case.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Hit:The 2nd Case</h5>
+             <a href="booking.html" style="margin-left: 3rem;" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls_r" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls_r" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  </div>
+</section>
+
+<section id="movie" class="mt-5">
+  <div class="container">
+    <h2>Events Happening Near You</h2>
+
+  <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="movie-card d-flex " >
+          <div class="card" style="width: 14rem;">
+            <img src="punchlinerscomedy.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Punchliners: Comedy Show</h5>
+              <p style="text-align: center;">Venue: Jalandhar</p>
+              <a href="booking.html" style="margin-left: 3rem;" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 14rem;">
+            <img src="lifafafTour.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">The Lifafa Tour</h5>
+              <p style="text-align: center;">Venue: Jalandhar</p>
+              <a href="booking.html" style="margin-left: 3rem;" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 14rem;">
+            <img src="papon.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Papoon Live Concert</h5>
+              <p style="text-align: center;">Venue: Jalandhar</p>
+             <a href="booking.html" style="margin-left: 3rem;" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 14rem;">
+            <img src="love rules.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Jay Shetty World Tour: love Rules</h5>
+              <p style="text-align: center;">Venue: Jalandhar</p>
+             <a href="booking.html" style="margin-left: 3rem;" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 14rem;">
+            <img src="boyace.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Boyace Avenue India Tour</h5>
+              <p style="text-align: center;">Venue: Jalandhar</p>
+             <a href="booking.html" style="margin-left: 3rem;" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="movie-card d-flex " >
+          <div class="card" style="width: 14rem;">
+            <img src="mltr.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Back On Road Tour 2022</h5>
+              <p style="text-align: center;">Venue: Jalandhar</p>
+             <a href="booking.html" style="margin-left: 3rem;" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 14rem;">
+            <img src="nishant suri.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nishant Suri Live- Standup Comedy Solo</h5>
+              <p style="text-align: center;">Venue: Jalandhar</p>
+              <a href="booking.html" style="margin-left: 3rem;" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 14rem;">
+            <img src="pannu yar.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pannu Yar! by Gurleen Punnu-Standup Comedy</h5>
+              <p style="text-align: center;">Venue: Jalandhar</p>
+             <a href="booking.html" style="margin-left: 3rem;" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 14rem;">
+            <img src="comic icon.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Comic Icon</h5>
+              <p style="text-align: center;">Venue: Jalandhar</p>
+              <a href="booking.html" style="margin-left: 3rem;" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 14rem;">
+            <img src="comic icon2.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Comic Icon</h5>
+              <p style="text-align:center;">Venue: Phawara</p>
+             <a href="booking.html" style="margin-left: 3rem;" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  </div>
+</section>
+
+<section> 
+  <div class="stream">
+    <br>
+    <br>
+    <img src="stream-bookmyShow.avif" alt="" width="100%" height="100%">
+  </div>
+</section>
+
+<section id="movie" class="mt-5">
+  <div class="container">
+    <h2>The Best Of Live Events</h2>
+
+  <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="movie-card d-flex " >
+          <div class="card" style="height: 300px; width: 300px">
+            <img src="workshop & more.avif" class="card-img-top" alt="...">
+           
+          </div>
+          <div class="card" style="height: 300px; width: 300px">
+            <img src="stay-fit-collection-202211140440.avif" class="card-img-top" alt="...">
+            
+          </div>
+          <div class="card" style="height: 300px; width: 300px">
+            <img src="kids-zone-collection-202211140440.avif" class="card-img-top" alt="...">
+          
+          </div>
+          <div class="card" style="height: 300px; width: 300px">
+            <img src="comedy-shows-collection-202211140440.avif" class="card-img-top" alt="...">
+            
+          </div>
+          <div class="card" style="height: 300px; width: 300px">
+            <img src="music-shows-collection-202211140440.avif" class="card-img-top" alt="...">
+            
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="movie-card d-flex " >
+          <div class="card" style="height: 300px; width: 300px">
+            <img src="esports-collection-202211140440.avif" class="card-img-top" alt="...">
+           
+          </div>
+          <div class="card" style="height: 300px; width: 300px">
+            <img src="upskill-collection-202211140440.avif" class="card-img-top" alt="...">
+           
+          </div>
+          <div class="card" style="height: 300px; width: 300px">
+            <img src="interactive-games-collection-202211140440.avif" class="card-img-top" alt="...">
+           
+          </div>
+          <div class="card" style="height: 300px; width: 300px">
+            <img src="arts-crafts-collection-202211140440.avif" class="card-img-top" alt="...">
+           
+          </div>
+          <div class="card" style="height: 300px; width: 300px">
+            <img src="theatre-shows-collection-202211140440.avif" class="card-img-top" alt="...">
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </div>
+</section>
+
+<section id="movie" class="mt-5">
+  <div class="pre">
+  <div class="container">
+    <img src="premiere-banner-web-collection-202208191200.avif" alt="" class="prebanner"><h5 style="color: #fff;">PREMIERE</h5>
+
+  <div id="carouselExampleControlspre" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="movie-card d-flex " >
+          <div class="card" style="width: 14rem;">
+            <img src="topgun.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Top Gun: Maverick</h5>
+              <p style="text-align: left;">Language: English</p>
+              <a href="booking.html" style="margin-left: 3rem;" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 14rem;">
+            <img src="dwimukha.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Dwimukha</h5>
+              <p style="text-align: left;">Language: English</p>
+            <a href="booking.html" style="margin-left: 3rem;" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 14rem;">
+            <img src="biggest fan.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">The Biggest Fan</h5>
+              <p style="text-align: left;">Language: French</p>
+            <a href="booking.html" style="margin-left: 3rem;" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 14rem;">
+            <img src="vengeance.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">vengeance</h5>
+              <p style="text-align: left;">Language: English</p>
+             <a href="booking.html" style="margin-left: 3rem;" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 14rem;">
+            <img src="sharp stick.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sharp Stick</h5>
+              <p style="text-align: left;">Language: English</p>
+             <a href="booking.html" style="margin-left: 3rem;" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="movie-card d-flex " >
+          <div class="card" style="width: 14rem;">
+            <img src="queen of glory.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Queen of glory</h5>
+              <p style="text-align: left;">Language: English</p>
+              <a href="booking.html" style="margin-left: 3rem;" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 14rem;">
+            <img src="joyride.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Joyride</h5>
+              <p style="text-align: left;">Language: English</p>
+            <a href="booking.html" style="margin-left: 3rem;" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 14rem;">
+            <img src="pinocchio.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pinocchio: A True Story</h5>
+              <p style="text-align: left;">Language: English</p>
+            <a href="booking.html" style="margin-left: 3rem;" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 14rem;">
+            <img src="beast.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Beast</h5>
+              <p style="text-align: left;">Language: English</p>
+             <a href="booking.html" style="margin-left: 3rem;" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 14rem;">
+            <img src="sharp stick.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sharp Stick</h5>
+              <p style="text-align: left;">Language: English</p>
+             <a href="booking.html" style="margin-left: 3rem;" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlspre" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlspre" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </div>
+  </div>
+</section>
+
+
+</body>
+</html>
