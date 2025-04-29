@@ -22,7 +22,7 @@ pipeline {
             steps {
                 script {
                     echo '🔵 Running Docker container...'
-                    bat 'docker run -d -p 3000:3000 frontend-app:latest'
+                    bat 'docker run -d -p 5000:5000 frontend-app:latest'
                 }
             }
         }
